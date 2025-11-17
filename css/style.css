@@ -1,0 +1,102 @@
+/* Paleta */
+:root {
+    --bg-main: #c1b9cc; 
+    --deep-lilac: #8F86A3;
+    --dark-contrast: #615B6B;
+    --white: #FFFFFF;
+    --lavender: #D8D2E1;
+    --light-neutral: #E7E2EB;
+}
+
+/* Estilo da navbar */
+.navbar-custom {
+    /* background-color: var(--deep-lilac); */
+    background-color:  var(--lavender);
+    padding: 12px 0;
+}
+
+/* Logo */
+.navbar-custom .navbar-brand {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: var(--light-neutral);
+}
+
+/* Links */
+.navbar-custom .nav-link {
+    color: var(--white);
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--dark-contrast);
+}
+
+/* Ícone hambúrguer */
+.navbar-toggler {
+    border-color: var(--white);
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1); /* deixa o ícone branco */
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--dark-contrast);
+    font-family: "Helvetica", sans-serif;
+}
+
+.hero {
+    background-color: var(--bg-main);
+    padding: 120px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero img {
+    width: 30%;
+    height: 30%;
+} 
+
+.section-light {
+    background-color: var(--lavender);
+    padding: 80px 0;
+}
+
+.section-soft {
+    background-color: var(--light-neutral);
+    padding: 80px 0;
+}
+
+.section-dark {
+    background-color: var(--deep-lilac);
+    padding: 80px 0;
+    color: var(--white);
+}
+
+.btn-primary {
+    background-color: var(--deep-lilac);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-contrast);
+}
+
+footer {
+    background-color: var(--dark-contrast);
+    color: var(--white);
+    padding: 25px 0;
+    text-align: center;
+}
