@@ -94,6 +94,20 @@ body {
     background-color: var(--dark-contrast);
 }
 
+.feature-section h2 {
+    color: var(--primary-color);
+}
+
+.feature-section p {
+    font-size: 1.1rem;
+    color: var(--dark-neutral);
+}
+
+.feature-section video {
+    max-width: 85%;
+}
+
+
 footer {
     background-color: var(--dark-contrast);
     color: var(--white);
