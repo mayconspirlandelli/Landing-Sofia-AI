@@ -94,6 +94,12 @@ body {
     background-color: var(--dark-contrast);
 }
 
+
+.feature-section {
+    background-color: var(--lavender);
+}
+
+
 .feature-section h2 {
     color: var(--primary-color);
 }
