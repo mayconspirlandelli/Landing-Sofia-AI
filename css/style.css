@@ -11,8 +11,18 @@
 /* Estilo da navbar */
 .navbar-custom {
     /* background-color: var(--deep-lilac); */
-    background-color:  var(--lavender);
+    /* inset fixed bar with rounded corners */
+    background-color: var(--white); /* var(--lavender) with slight transparency */
     padding: 12px 0;
+    border-radius: 14px; /* arredonda os cantos inferiores */
+    left: 12px;
+    right: 12px;
+    top: 12px; /* afasta um pouco do topo para mostrar os cantos arredondados */
+    width: auto;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 1040; /* garante que fique acima do conteúdo */
 }
 
 /* Logo */
@@ -40,6 +50,23 @@
 /* Ícone hambúrguer */
 .navbar-toggler {
     border-color: var(--white);
+}
+
+/* Quando o menu colapsado for exibido (celular), dar o mesmo fundo arredondado */
+.navbar-custom .navbar-collapse.show {
+    background-color: rgba(216,210,225,0.98);
+    border-radius: 0 0 12px 12px;
+    padding: 10px 16px;
+    margin-top: 6px;
+}
+
+/* Ajustes de color para contraste */
+.navbar-custom .nav-link {
+    color: var(--dark-contrast);
+}
+
+.navbar-custom .nav-link:hover {
+    color: #3f3a45;
 }
 
 .navbar-toggler-icon {
@@ -87,7 +114,10 @@ body {
 
 .btn-primary {
     background-color: var(--deep-lilac);
+    transition: 0.5s;
     border: none;
+    border-radius: 14px; /* arredonda os cantos inferiores */
+
 }
 
 .btn-primary:hover {
@@ -120,3 +150,4 @@ footer {
     padding: 25px 0;
     text-align: center;
 }
+
